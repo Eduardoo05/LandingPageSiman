@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.body {
+    max-width: 1350px;
+    width: 98%;
+    margin: 0px auto;
+    border-radius: 4px;
+    background-color: white;
+    width: 100%;
+    display: grid;
+    gap: 0;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+
+    grid-template-areas: "header header header inicio input input"
+                         "txt1 txt1 txt1 off1 img1 img1"
+                         "txt1 txt1 txt1 off1 img1 img1"
+                         "img2 img2 off2 txt2 txt2 txt2"
+                         "img2 img2 off2 txt2 txt2 txt2"
+                         "txt3 txt3 txt3 off3 img3 img3"
+                         "txt3 txt3 txt3 off3 img3 img3"
+                         "footer footer footer footer footer footer";
+
+}
+
+.header {
+    text-align: center;
+    grid-area: header;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color:white;
+
+}
+
+/*Establecimiento del Navbar*/
+
+.navbar {
+    background-color: brown;
+    grid-area: contactos;
+}
+
+.inicio {
+    grid-area: inicio;
+    background-color: white;
+    color: black;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-color: black;
+    font-size: 2rem;
+
+}
+
+.inicio:hover {
+    background-color: chartreuse;
+}
+
+nav.inicio ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav.inicio > ul > li {
+    position: relative;
+    display: inline-block;
+}
+
+nav.inicio ul ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+}
+
+nav.inicio ul ul li {
+    display: block;
+}
+
+nav.inicio > ul > li:hover > ul {
+    display: block;
+}
+
+nav.inicio ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.input {
+    border-radius: 0px;
+    grid-area: input;
+    max-height: auto;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: lightslategray;
+    border-color: white;
+}
+
+/*Desarrollo del main*/
+
+.block1 {
+    background-color: darkgreen;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+.txt1 {
+    grid-area: txt1;
+    background-color: lightpink;
+    color: black;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.off1 {
+    background-color: lightpink;
+    grid-area: off1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: brown;
+}
+
+.img1 {
+    grid-area: img1;
+    background-color: lightpink;
+}
+
+.img2 {
+    grid-area: img2;
+    background-color: rgb(10, 195, 133);
+}
+
+.txt2 {
+    grid-area: txt2;
+    background-color: rgb(10, 195, 133);
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.off2 {
+    background-color: rgb(10, 195, 133);
+    color:cornflowerblue;
+    font-size: 5rem;
+    grid-area: off2;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.txt3 {
+    grid-area: txt3;
+    background-color: lightslategray;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.off3 {
+    background-color: lightslategray;
+    color: rgb(125, 221, 125);
+    font-size: 4.7rem;
+    grid-area: off3;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/*creacion del footer*/
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 1rem;
+}

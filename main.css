@@ -118,6 +118,18 @@ nav.inicio ul a {
     color: black;
     font-size: 1rem;
     padding: 10px;
+    color: brown;
+}
+
+.txt1_p1 {
+    font-size: 0.8rem;
+    grid-area: txt1;
+    padding: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    color:rgb(17, 77, 57);
+    
 }
 
 .off1 {
@@ -146,6 +158,17 @@ nav.inicio ul a {
     background-color: rgb(10, 195, 133);
     font-size: 1rem;
     padding: 10px;
+    color: rgb(43, 65, 106);
+}
+
+.txt2_p2 {
+    grid-area: txt2;
+    font-size: 0.8rem;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    color:black;
 }
 
 .off2 {
@@ -168,6 +191,17 @@ nav.inicio ul a {
     background-color: lightslategray;
     font-size: 1rem;
     padding: 10px;
+    color: rgb(30, 58, 30);
+}
+
+.txt3_p3 {
+    grid-area: txt3;
+    font-size: 0.8rem;
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    color:beige;
 }
 
 .off3 {

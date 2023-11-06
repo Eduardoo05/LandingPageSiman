@@ -227,3 +227,24 @@ nav.inicio ul a {
     background-color: black;
     font-size: 1rem;
 }
+
+@media screen and (max-width: 768px){
+    .body {
+        grid-template-areas: "header header header header header header"
+                             "inicio inicio input input input input"
+                             "off1 off1 off1 off1 off1 off1"
+                             "img1 img1 img1 img1 img1 img1"
+                             "txt1 txt1 txt1 txt1 txt1 txt1"
+                             "txt1 txt1 txt1 txt1 txt1 txt1"
+                             "off2 off2 off2 off2 off2 off2"
+                             "img2 img2 img2 img2 img2 img2"
+                             "txt2 txt2 txt2 txt2 txt2 txt2"
+                             "txt2 txt2 txt2 txt2 txt2 txt2"
+                             "off3 off3 off3 off3 off3 off3"
+                             "img3 img3 img3 img3 img3 img3"
+                             "txt3 txt3 txt3 txt3 txt3 txt3"
+                             "txt3 txt3 txt3 txt3 txt3 txt3"
+                             "footer footer footer footer footer footer";
+    }
+    
+}
